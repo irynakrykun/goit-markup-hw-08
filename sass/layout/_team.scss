@@ -3,18 +3,24 @@
 }
 
 .team__title {
-  margin-bottom: 50px;
-  color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-}
+  color: $title-text-color;
+  margin-bottom: 30px;
 
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 .team__list {
-  display: flex;
-  gap: $card-sed-gap;
+  display: block;
+  /*display: flex;
+  gap: $card-sed-gap;*/
 }
 
 .team__card {

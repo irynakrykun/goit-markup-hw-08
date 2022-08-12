@@ -130,12 +130,24 @@
           </ul>
         </div>
       </section>-->
-      <!---- <section class="team section">
+      <section class="team section">
         <div class="container team__container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/pfoto1.1.jpg" alt="Сотрудник" width="270" />
+              <img
+                srcset="
+                  ./images\team\deck-270product.jpg 270w,
+                  ./images\team\deck-540product.jpg 540w,
+                  ./images\team\mobail-450productdesigner.jpg 450w,
+                  ./images\team\mobail-900productdesigner.jpg 900w,
+                  ./images\team\tablet-354product.jpg 354w,
+                  ./images\team\tablet-708product.jpg 708"
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, 100vw"
+                src="./images/team/mobail-450productdesigner.jpg"
+                alt="Сотрудник"
+                width="450"
+              />
               <div class="team__card">
                 <h3 class="team__card-title">Игорь Демьяненко</h3>
                 <p class="team__card-text">Product Designer</p>
@@ -195,7 +207,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/pfoto1.2.jpg" alt="Сотрудник" width="270" />
+              <img
+                srcset="
+                  ./images\team\deck-270developer.jpg           270w,
+                  ./images\team\deck-540developer.jpg           540w,
+                  ./images\team\mobail-450frontenddeveloper.jpg 450w,
+                  ./images\team\mobail-900frontenddeveloper.jpg 900w,
+                  ./images\team\tablet-354developer.jpg         354w,
+                  ./images\team\tablet-708developer.jpg         708w
+                "
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, 100vw"
+                src="./images/team/mobail-450frontenddeveloper.jpg"
+                alt="Сотрудник"
+                width="450"
+              />
               <div class="team__card">
                 <h3 class="team__card-title">Ольга Репина</h3>
                 <p class="team__card-text">Frontend Developer</p>
@@ -255,7 +280,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/pfoto1.3.jpg" alt="Сотрудник" width="270" />
+              <img
+                srcset="./images\team\deck-270marketing.jpg 270w,
+                 ./images\team\deck-540marketing .jpg 540w,
+                 ./images\team\mobail-450marketing.jpg 450w,
+                 ./images\team\mobail-900marketing.jpg 900w,
+                 ./images\team\tablet-354marketing.jpg 354w,
+                 ./images\team\tablet-708marketing.jpg 708w "
+                src="./images/team/mobail-450marketing.jpg"
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, 100vw"
+                alt="Сотрудник"
+                width="450"
+              />
               <div class="team__card">
                 <h3 class="team__card-title">Николай Тарасов</h3>
                 <p class="team__card-text">Marketing</p>
@@ -315,7 +351,20 @@
               </div>
             </li>
             <li class="tem__item">
-              <img src="./images/pfoto1.4.jpg" alt="Сотрудник" width="270" />
+              <img
+                srcset="
+                  ./images\team\deck-270designer.jpg   270w,
+                  ./images\team\deck-540designer.jpg   540w,
+                  ./images\team\mobail-450designer.jpg 450w,
+                  ./images\team\mobail-900designer.jpg 900w,
+                  ./images\team\tablet-354designer.jpg 354w,
+                  ./images\team\tablet-708designer.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, 100vw"
+                src="./images/team/mobail-450designer.jpg"
+                alt="Сотрудник"
+                width="450"
+              />
               <div class="team__card">
                 <h3 class="team__card-title">Михаил Ермаков</h3>
                 <p class="team__card-text">UI Designer</p>
@@ -376,7 +425,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <section class="clients section">
         <div class="container clients__container">
           <h2 class="clients__title">Постоянные клиенты</h2>
