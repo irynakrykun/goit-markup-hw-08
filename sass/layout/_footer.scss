@@ -3,22 +3,40 @@
   padding: 60px 0;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 .footer-logo {
   display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   margin-bottom: 20px;
   color: $primery-bgc-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
+.footer-item {
+  text-align: center;
+}
+
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-list .link,
@@ -50,12 +68,21 @@ address .link {
 }
 
 .footer-link {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
+  margin: 0;
+  margin-top: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+  }
 }
 .footer-text {
-  flex-basis: 145px;
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -63,6 +90,10 @@ address .link {
   text-transform: uppercase;
   color: $primery-bgc-color;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 145px;
+  }
 }
 
 .footer-list-icon {
@@ -93,8 +124,24 @@ address .link {
 .footer-icon {
   fill: currentColor;
 }
+
+form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer-form {
-  margin-left: auto;
+  margin: 0;
+  text-align: center;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 .form-text {
   font-style: normal;
@@ -109,7 +156,7 @@ address .link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 28px;
+  padding: 10px 31px;
   width: 200px;
   height: 50px;
   font-style: normal;
@@ -120,14 +167,17 @@ address .link {
   color: $primery-bgc-color;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-left: 12px;
-}
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
 .footer-icon-form {
   margin-left: 10px;
 }
 .form-email {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -139,4 +189,14 @@ address .link {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin: 0;
+  }
 }

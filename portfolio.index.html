@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="site-header">
+    <!--<header class="site-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link"><span class="colortext"> Web</span>Studio </a>
@@ -52,7 +52,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header>-->
     <main>
       <section class="portfolio section">
         <div class="container">
@@ -78,12 +78,33 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img
-                    src="./images/portfolio/website.jpg"
-                    alt="Веб сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images\portfolio\technokrjak1xdeck.jpg 1x,
+                        ./images\portfolio\technokrjak2xdeck.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\technokrjak1xtab.jpg 1x,
+                        ./images\portfolio\technokrjak2xtab.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images\portfolio\technocrjak1xmob.jpg    1x,
+                        ./images\portfolio\technocrjak2хmobail.jpg
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/portfolio/technocrjak1xmob.jpg" alt="Веб сайт" width="450" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -101,7 +122,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/desigen.jpg" alt="Дизайн" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px )" srcset="" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="" type="image/jpg">
+                  <img src="./images/portfolio/desigen.jpg" alt="Дизайн" width="450" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -119,11 +145,16 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
+                  <picture>
+                    <source media="(min-width: 1200px )" srcset="" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="" type="image/jpg">
                   <img
                     src="./images/portfolio/namerestuarant.jpg"
                     alt="Название ресторана"
-                    width="370"
+                    width="450"
                   />
+                  <picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -141,7 +172,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/headphone.jpg" alt="Наушники" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px )" srcset="" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="" type="image/jpg">
+                  <img src="./images/portfolio/headphone.jpg" alt="Наушники" width="450" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -159,7 +195,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/box.jpg" alt="Коробки" width="370" />
+                   <picture>
+                    <source media="(min-width: 1200px )" srcset="" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="" type="image/jpg">
+                  <img src="./images/portfolio/box.jpg" alt="Коробки" width="450" />
+                   </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -177,7 +218,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/webbordes.jpg" alt="Веб-сайт" width="370" />
+                   <picture>
+                    <source media="(min-width: 1200px )" srcset="./images\portfolio\monitor1xdeck.jpg 1x, ./images\portfolio\monitor2xdeck.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="./images\portfolio\monitor1xtab.jpg 1x, ./images\portfolio\monitor2xtab.jpg 2x" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="./images/portfolio/monitor1xmob.jpg 1x, ./images\portfolio\monitor2xmob.jpg 2x" type="image/jpg">
+                  <img src="./images/portfolio/monitor1xmob.jpg" alt="Веб-сайт" width="450" />
+                   </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -195,7 +241,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/desigen2.jpg" alt="Дизайн книги" width="370" />
+                   <picture>
+                    <source media="(min-width: 1200px )" srcset="./images\portfolio\books1xdeck.jpg 1x, ./images\portfolio\books2xdeck.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="./images\portfolio\books1xtab.jpg 1x, ./images\portfolio\books2xtab.jpg 2x" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="./images/portfolio/books1xmod.jpg 1x, ./images\portfolio\books2xmod.jpg 2x" type="image/jpg">
+                  <img src="./images/portfolio/books1xmod.jpg" alt="Дизайн книги" width="450" />
+                   </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -213,7 +264,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/lab.jpg" alt="Проект" width="370" />
+                   <picture>
+                    <source media="(min-width: 1200px )" srcset="./images\portfolio\project1xdeck.jpg 1x, ./images\portfolio\project2xdeck.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="./images\portfolio\project1xtab.jpg 1x, ./images\portfolio\project2xtab.jpg 2x" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="./images\portfolio\project1xmob.jpg 1x, ./images\portfolio\project2xmob.jpg 2x" type="image/jpg">
+                  <img src="./images/portfolio/project1xmob.jpg" alt="Проект" width="450" />
+                   </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -231,7 +287,12 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="#">
                 <div class="portfolio-img">
-                  <img src="./images/portfolio/crowingbisnes.jpg" alt="Рост бизнеса" width="370" />
+                   <picture>
+                    <source media="(min-width: 1200px )" srcset="./images\portfolio\busnes1xdeck.jpg 1x, ./images\portfolio\busnes2xdeck.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 768px )" srcset="./images\portfolio\busnes1xtab.jpg 1x, ./images\portfolio\busnes2xtab.jpg 2x" type="image/jpg">
+                    <source media="(max-width: 767px )" srcset="./images\portfolio\busnes1xmob.jpg 1x, ./images\portfolio\busnes2xmob.jpg 2x" type="image/jpg">
+                  <img src="./images/portfolio/boxes1xmobail.jpg" alt="Рост бизнеса" width="450" />
+                   </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и

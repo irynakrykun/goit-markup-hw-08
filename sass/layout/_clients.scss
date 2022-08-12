@@ -18,16 +18,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: $card-sed-gap;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     & > li {
       flex-basis: calc(((100% - 30px) * 1) / 2);
       display: block;
     }
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     & > li {
-      flex-basis: calc(((100% - 30px) * 2) / 3);
+      flex-basis: 226px;
     }
   }
 
